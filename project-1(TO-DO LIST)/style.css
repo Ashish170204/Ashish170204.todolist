@@ -1,0 +1,114 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+#heading {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="date"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 200px;
+}
+
+.btn {
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-add {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn-add:hover {
+  background-color: #0056b3;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #a71d2a;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.todo-item {
+  background-color: #ffffff;
+  border-left: 5px solid #007bff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  padding: 15px 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeIn 0.3s ease-in;
+}
+
+.todo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-text span:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.todo-text span:last-child {
+  font-size: 14px;
+  color: #666;
+}
+
+.empty-message {
+  text-align: center;
+  color: #888;
+  font-size: 16px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
